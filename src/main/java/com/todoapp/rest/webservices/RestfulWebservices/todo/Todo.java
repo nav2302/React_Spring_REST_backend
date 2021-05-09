@@ -9,6 +9,8 @@ public class Todo {
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
+	
+	protected Todo() {}
 
 	public Todo(Long id, String userName, String description, Date targetDate, boolean isDone) {
 		super();
@@ -21,6 +23,10 @@ public class Todo {
 
 	public Long getId() {
 		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getUserName() {
